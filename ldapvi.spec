@@ -23,8 +23,8 @@ LDAP.
 
 %description -l pl
 LDAPvi jest narzêdziem do obróbki rekordów katalogu LDAP. Pozwala
-edytowaæ je w formacie LDIF edytorem tekstowym i zachowywaæ zmiany z
-powrotem w LDAPie.
+modyfikowaæ je w formacie LDIF edytorem tekstowym i zachowywaæ zmiany
+z powrotem w LDAP-ie.
 
 %prep
 %setup -q
