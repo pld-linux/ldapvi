@@ -12,7 +12,7 @@ URL:		http://www.lichteblau.com/src.html
 BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	ncurses-devel
 BuildRequires:	openldap-devel >= 2.0
-BuildRequires:	popt-devel
+BuildRequires:  pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -28,9 +28,9 @@ powrotem w LDAPie.
 %prep
 %setup -q
 %patch0 -p1
-%configure
 
 %build
+%configure
 %{__make}
 
 %install
