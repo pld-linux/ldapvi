@@ -43,7 +43,7 @@ install ldapvi.1 $RPM_BUILD_ROOT%{_mandir}/man1
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/ldapvi
 %doc NEWS
-%{_mandir}/man*/*
+%{_mandir}/man?/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
