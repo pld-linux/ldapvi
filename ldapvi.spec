@@ -4,7 +4,7 @@ Name:		ldapvi
 Group:		Networking/Utilities
 License:	GPL v2
 Version:	1.1
-Release:	0.1
+Release:	1
 Source0:	http://www.lichteblau.com/download/%{name}-%{version}.tar.gz
 # Source0-md5:	9395bc94613d33cdd8840b83821c9fb0
 Patch0:		%{name}-ncurses.patch
