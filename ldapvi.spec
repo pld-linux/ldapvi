@@ -13,6 +13,7 @@ BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	ncurses-devel
 BuildRequires:	openldap-devel >= 2.0
 BuildRequires:  pkgconfig
+BuildRequires:	popt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
