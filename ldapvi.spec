@@ -1,6 +1,6 @@
-Name:		ldapvi
 Summary:	LDAP LDIF Editor
 Summary(pl):	Edytor LDAP LDIF
+Name:		ldapvi
 Group:		Networking/Utilities
 License:	GPL v2
 Version:	1.1
@@ -37,14 +37,15 @@ powrotem w LDAPie.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+
 install ldapvi $RPM_BUILD_ROOT%{_bindir}
 install ldapvi.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-%files
-%defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/ldapvi
-%doc NEWS
-%{_mandir}/man?/*
-
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%doc NEWS
+%attr(755,root,root) %{_bindir}/ldapvi
+%{_mandir}/man?/*
