@@ -4,13 +4,13 @@ Name:		ldapvi
 Group:		Networking/Utilities
 License:	GPL v2
 Version:	1.5
-Release:	1
+Release:	2
 Source0:	http://www.lichteblau.com/download/%{name}-%{version}.tar.gz
 # Source0-md5:	e98f9fbd5596aac81373a849888a87f1
 URL:		http://www.lichteblau.com/src.html
 BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	ncurses-devel
-BuildRequires:	openldap-devel >= 2.0
+BuildRequires:	openldap-devel >= 2.3.0
 BuildRequires:	pkgconfig
 BuildRequires:	popt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
