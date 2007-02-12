@@ -1,5 +1,5 @@
 Summary:	LDAP LDIF Editor
-Summary(pl):	Edytor LDAP LDIF
+Summary(pl.UTF-8):   Edytor LDAP LDIF
 Name:		ldapvi
 Group:		Networking/Utilities
 License:	GPL v2
@@ -20,9 +20,9 @@ LDAPvi allows retrieving LDAP database records, edit them in LDIF
 format within a text editor and store the changed records back via
 LDAP.
 
-%description -l pl
-LDAPvi jest narzêdziem do obróbki rekordów katalogu LDAP. Pozwala
-modyfikowaæ je w formacie LDIF edytorem tekstowym i zachowywaæ zmiany
+%description -l pl.UTF-8
+LDAPvi jest narzÄ™dziem do obrÃ³bki rekordÃ³w katalogu LDAP. Pozwala
+modyfikowaÄ‡ je w formacie LDIF edytorem tekstowym i zachowywaÄ‡ zmiany
 z powrotem w LDAP-ie.
 
 %prep
