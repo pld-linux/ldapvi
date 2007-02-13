@@ -1,5 +1,5 @@
 Summary:	LDAP LDIF Editor
-Summary(pl.UTF-8):   Edytor LDAP LDIF
+Summary(pl.UTF-8):	Edytor LDAP LDIF
 Name:		ldapvi
 Group:		Networking/Utilities
 License:	GPL v2
