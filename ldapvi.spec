@@ -3,11 +3,12 @@ Summary(pl.UTF-8):	Edytor LDAP LDIF
 Name:		ldapvi
 Group:		Networking/Utilities
 License:	GPL v2
-Version:	1.5
-Release:	2
+Version:	1.7
+Release:	1
 Source0:	http://www.lichteblau.com/download/%{name}-%{version}.tar.gz
-# Source0-md5:	e98f9fbd5596aac81373a849888a87f1
-URL:		http://www.lichteblau.com/src.html
+# Source0-md5:	6dc2f5441ac5f1e2b5b036e3521012cc
+URL:		http://www.lichteblau.com/ldapvi/
+BuildRequires:	autoconf
 BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	ncurses-devel
 BuildRequires:	openldap-devel >= 2.3.0
@@ -27,8 +28,11 @@ z powrotem w LDAP-ie.
 
 %prep
 %setup -q
+sed -i -e 's#curses ncurses#tinfo curses ncurses#g' configure.in
 
 %build
+%{__aclocal}
+%{__autoconf}
 %configure \
 	 CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
 %{__make}
