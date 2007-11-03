@@ -12,7 +12,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	ncurses-devel
-BuildRequires:	openldap-devel >= 2.3.0
+BuildRequires:	openldap-devel >= 2.4.6
 BuildRequires:	pkgconfig
 BuildRequires:	popt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
