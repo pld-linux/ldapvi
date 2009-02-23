@@ -4,7 +4,7 @@ Name:		ldapvi
 Group:		Networking/Utilities
 License:	GPL v2
 Version:	1.7
-Release:	2
+Release:	3
 Source0:	http://www.lichteblau.com/download/%{name}-%{version}.tar.gz
 # Source0-md5:	6dc2f5441ac5f1e2b5b036e3521012cc
 URL:		http://www.lichteblau.com/ldapvi/
