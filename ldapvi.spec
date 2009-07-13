@@ -4,9 +4,10 @@ Name:		ldapvi
 Group:		Networking/Utilities
 License:	GPL v2
 Version:	1.7
-Release:	3
+Release:	4
 Source0:	http://www.lichteblau.com/download/%{name}-%{version}.tar.gz
 # Source0-md5:	6dc2f5441ac5f1e2b5b036e3521012cc
+Patch0:		%{name}-getline.patch
 URL:		http://www.lichteblau.com/ldapvi/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -29,6 +30,7 @@ z powrotem w LDAP-ie.
 
 %prep
 %setup -q
+%patch0 -p1
 sed -i -e 's#curses ncurses#tinfo curses ncurses#g' configure.in
 
 %build
