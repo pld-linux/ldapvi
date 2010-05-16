@@ -1,10 +1,10 @@
 Summary:	LDAP LDIF Editor
 Summary(pl.UTF-8):	Edytor LDAP LDIF
 Name:		ldapvi
-Group:		Networking/Utilities
-License:	GPL v2
 Version:	1.7
 Release:	5
+License:	GPL v2
+Group:		Networking/Utilities
 Source0:	http://www.lichteblau.com/download/%{name}-%{version}.tar.gz
 # Source0-md5:	6dc2f5441ac5f1e2b5b036e3521012cc
 Patch0:		%{name}-getline.patch
@@ -16,6 +16,7 @@ BuildRequires:	ncurses-devel
 BuildRequires:	openldap-devel >= 2.4.6
 BuildRequires:	pkgconfig
 BuildRequires:	popt-devel
+BuildRequires:	readline-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
