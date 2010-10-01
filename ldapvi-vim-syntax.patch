@@ -1,0 +1,18 @@
+--- ldapvi-1.7/ldapvi.c~	2010-10-01 11:04:21.118669165 +0200
++++ ldapvi-1.7/ldapvi.c	2010-10-01 11:08:51.905669166 +0200
+@@ -1413,10 +1413,11 @@
+ {
+ 	int nlines = 0;
+ 
+-	if (print_binary_mode == PRINT_UTF8 && !cmdline->ldif) {
+-		fputs("# -*- coding: utf-8 -*- vim:encoding=utf-8:\n", s);
+-		nlines++;
+-	}
++	if (print_binary_mode == PRINT_UTF8 && !cmdline->ldif)
++		fputs("# -*- coding: utf-8 -*- vim:encoding=utf-8:syntax=ldif:\n", s);
++	else
++		fputs("# vim:syntax=ldif:\n", s);
++	nlines++;
+ 	if (cmdline->ldif) {
+ 		fputs("# " RFC_2849_URL "\n" "# " MANUAL_LDIF_URL "\n", s);
+ 		nlines += 2;
