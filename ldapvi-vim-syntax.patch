@@ -9,9 +9,9 @@
 -		nlines++;
 -	}
 +	if (print_binary_mode == PRINT_UTF8 && !cmdline->ldif)
-+		fputs("# -*- coding: utf-8 -*- vim:encoding=utf-8:syntax=ldif:\n", s);
++		fputs("# -*- coding: utf-8 -*- vim:encoding=utf-8:filetype=ldif:\n", s);
 +	else
-+		fputs("# vim:syntax=ldif:\n", s);
++		fputs("# vim:filetype=ldif:\n", s);
 +	nlines++;
  	if (cmdline->ldif) {
  		fputs("# " RFC_2849_URL "\n" "# " MANUAL_LDIF_URL "\n", s);
