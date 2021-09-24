@@ -2,7 +2,7 @@ Summary:	LDAP LDIF Editor
 Summary(pl.UTF-8):	Edytor LDAP LDIF
 Name:		ldapvi
 Version:	1.7
-Release:	12
+Release:	13
 License:	GPL v2
 Group:		Networking/Utilities
 Source0:	http://www.lichteblau.com/download/%{name}-%{version}.tar.gz
