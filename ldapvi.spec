@@ -32,8 +32,8 @@ z powrotem w LDAP-ie.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 sed -i -e 's#curses ncurses#tinfo curses ncurses#g' configure.in
 
 %build
