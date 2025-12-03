@@ -1,0 +1,21 @@
+--- ldapvi-1.7/ldapvi.c~	2025-12-03 19:48:51.000000000 +0100
++++ ldapvi-1.7/ldapvi.c	2025-12-03 19:50:26.260986848 +0100
+@@ -1233,7 +1233,7 @@ write_config(LDAP *ld, FILE *f, cmdline
+ 			      f);
+ 		for (i = 0; i < basedns->len; i++) {
+ 			if (basedns->len > 1) fputc('#', f);
+-			fprintf(f, "BASE %s\n", g_ptr_array_index(basedns, i));
++			fprintf(f, "BASE %s\n", (gchar *)g_ptr_array_index(basedns, i));
+ 		}
+ 	} else {
+ 		if (!cmdline->discover)
+--- ldapvi-1.7/port.c~	2025-12-03 19:54:45.000000000 +0100
++++ ldapvi-1.7/port.c	2025-12-03 20:00:20.277048682 +0100
+@@ -35,6 +35,7 @@
+ #if defined(HAVE_OPENSSL)
+ #include <openssl/sha.h>
+ #include <openssl/md5.h>
++#include <openssl/rand.h>
+ #elif defined(HAVE_GNUTLS)
+ #include <gnutls/gnutls.h>
+ #include <gnutls/openssl.h>
